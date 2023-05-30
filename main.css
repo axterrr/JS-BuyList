@@ -1,17 +1,105 @@
+body, hr {
+    background-color: #dadada;
+}
+
+.menu, .info {
+    background-color: white;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.add, .goods {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.add {
+    height: 80px;
+    padding: 10px;
+}
+
+.add-input {
+    width: 80%;
+    border-color: #c4c4c4;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 25px;
+}
+
+.add-button {
+    width: 20%;
+    background-color: #2285d0;
+    border-color: #2276b7;
+    color: white;
+    font-size: 25px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.goods-input {
+    height: 20px;
+    border-color: #a5d0f0;
+    border-radius: 5px;
+}
+
+.amount-minus, .amount-plus {
+    border-radius: 30px;
+    height: 35px;
+    width: 35px;
+    color: white;
+    font-size: 20px;
+    background-color: #db2828;
+    border-color: #bf2728;
+}
+
+.amount-plus {
+    background-color: #22ba46;
+    border-color: #22a441 ;
+}
+
+.amount-number {
+    background-color: #e8e8e8;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.bought-button, .bought-cancel {
+    background-color: #e8e8e8;
+    border-color: #f4f4f4;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.bought-cancel {
+    width: 40px;
+    background-color: #db2828;
+    border-color: #bf2728;
+    color: white;
+}
+
 .product-item {
-	background-color: gray;
+	background-color: #e8e8e8;
 	display: inline-block;
 	height: 25px;
 	padding: 5px;
 	border-radius: 5px;
 }
 
-.amount {
-	background-color: yellow;
+.item-amount {
+	background-color: #f2711d;
 	border-radius: 10px;
-	
+
 	display: inline-block;
 	height: 20px;
 	width: 20px;
 	text-align: center;
+    color: white;
 }
