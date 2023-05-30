@@ -2,6 +2,10 @@ body, hr {
     background-color: #dadada;
 }
 
+hr {
+    margin: 0;
+}
+
 .menu, .info {
     background-color: white;
     margin: 10px;
@@ -10,20 +14,22 @@ body, hr {
 
 .add, .goods {
     box-sizing: border-box;
+    align-items: center;
     display: flex;
     justify-content: space-between;
     height: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 5px 20px;
 }
 
 .add {
     height: 80px;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 .add-input {
+    box-sizing: border-box;
     width: 80%;
+    height: 80%;
     border-color: #c4c4c4;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -32,6 +38,7 @@ body, hr {
 
 .add-button {
     width: 20%;
+    height: 80%;
     background-color: #2285d0;
     border-color: #2276b7;
     color: white;
@@ -64,7 +71,7 @@ body, hr {
 .amount-number {
     background-color: #e8e8e8;
     height: 35px;
-    padding: 5px;
+    padding: 5px 10px;
     border-radius: 5px;
     font-size: 20px;
 }
@@ -72,17 +79,28 @@ body, hr {
 .bought-button, .bought-cancel {
     background-color: #e8e8e8;
     border-color: #f4f4f4;
-    height: 40px;
+    height: 35px;
     width: 100px;
     border-radius: 5px;
     font-size: 16px;
 }
 
 .bought-cancel {
-    width: 40px;
+    width: 38px;
     background-color: #db2828;
     border-color: #bf2728;
     color: white;
+}
+
+.goods-name, .goods-input {
+    width: 20%;
+    font-size: 20px;
+}
+
+.goods-input {
+    box-sizing: border-box;
+    height: 70%;
+    font-size: 14px;
 }
 
 .product-item {
@@ -96,7 +114,6 @@ body, hr {
 .item-amount {
 	background-color: #f2711d;
 	border-radius: 10px;
-
 	display: inline-block;
 	height: 20px;
 	width: 20px;
