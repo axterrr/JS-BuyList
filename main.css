@@ -6,10 +6,23 @@ hr {
     margin: 0;
 }
 
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
 .menu, .info {
+    box-sizing: border-box;
+    margin: 20px 10px;
+    float: left;
     background-color: white;
-    margin: 10px;
     border-radius: 5px;
+    box-shadow: 2px 4px 4px gray;
+    width: 70%;
+}
+
+.info {
+    width: 30%;
 }
 
 .add, .goods {
@@ -103,9 +116,46 @@ hr {
     font-size: 14px;
 }
 
+.bought .goods-name {
+    text-decoration: line-through;
+}
+
+.bought .amount-plus, .bought .amount-minus {
+    visibility: hidden;
+}
+
+.bought .bought-cancel {
+    visibility: hidden;
+    float: left;
+}
+
+.bought .bought-button::before {
+    content: "Not ";
+}
+
+.info-div-header, .info-div-product {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 5px 20px;
+}
+
+.info-div-product {
+    height: 80px;
+}
+
+.info-div-header {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
 .product-item {
 	background-color: #e8e8e8;
-	display: inline-block;
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 5px;
 	height: 25px;
 	padding: 5px;
 	border-radius: 5px;
@@ -119,4 +169,13 @@ hr {
 	width: 20px;
 	text-align: center;
     color: white;
+}
+
+@media (max-width: 800px) {
+    main {
+        display: block;
+    }
+    .menu, .info {
+        width: 100%;
+    }
 }
