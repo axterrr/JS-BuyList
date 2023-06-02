@@ -11,7 +11,7 @@
 		<div class="menu">
 			<div class="add">
 				<input class="add-input" type="text" placeholder=" Goods name">
-				<button class="add-button">Add</button>
+				<button class="add-button" data-tooltip="Add goods">Add</button>
 			</div>
 			<hr>
 
@@ -19,14 +19,14 @@
 				<span class="goods-name">Tomatoes</span>
 
 				<div class="amount">
-					<button class="amount-minus">-</button>
+					<button class="amount-minus" data-tooltip="Reduce">-</button>
 					<span class="amount-number">2</span>
-					<button class="amount-plus">+</button>
+					<button class="amount-plus" data-tooltip="Increase">+</button>
 				</div>
 
 				<div class="buttons">
-					<button class="bought-button">Bought</button>
-					<button class="bought-cancel">X</button>
+					<button class="bought-button" data-tooltip="Buy">Bought</button>
+					<button class="bought-cancel" data-tooltip="Cancel">X</button>
 				</div>
 			</div>
 			<hr>
@@ -35,14 +35,14 @@
 				<span class="goods-name">Cookies</span>
 
 				<div class="amount">
-					<button class="amount-minus">-</button>
+					<button class="amount-minus" data-tooltip="Reduce">-</button>
 					<span class="amount-number">2</span>
-					<button class="amount-plus">+</button>
+					<button class="amount-plus" data-tooltip="Increase">+</button>
 				</div>
 
 				<div class="buttons">
-					<button class="bought-button">Bought</button>
-					<button class="bought-cancel">X</button>
+					<button class="bought-button" data-tooltip="Buy">Bought</button>
+					<button class="bought-cancel" data-tooltip="Cancel">X</button>
 				</div>
 			</div>
 			<hr>
@@ -51,14 +51,14 @@
 				<input class="goods-input" type="text" value=" Cheese">
 
 				<div class="amount">
-					<button class="amount-minus">-</button>
+					<button class="amount-minus" data-tooltip="Reduce">-</button>
 					<span class="amount-number">1</span>
-					<button class="amount-plus">+</button>
+					<button class="amount-plus" data-tooltip="Increase">+</button>
 				</div>
 
 				<div class="buttons">
-					<button class="bought-button">Bought</button>
-					<button class="bought-cancel">X</button>
+					<button class="bought-button" data-tooltip="Buy">Bought</button>
+					<button class="bought-cancel" data-tooltip="Cancel">X</button>
 				</div>
 			</div>
 		</div>
@@ -93,6 +93,22 @@
 				</span>
 			</div>
 		</div>
+		<div class="tooltip"></div>
 	</main>
+	<footer>
+		<div class="badge">
+			<div class="buy-list">
+				<span>Buy List</span>
+			</div>
+
+			<div class="author">
+				<span>Created by:</span>
+			</div>
+
+			<div class="name">
+				<span>Vladyslav Hibskyi</span>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
