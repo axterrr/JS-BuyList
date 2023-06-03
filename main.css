@@ -10,6 +10,10 @@ main {
     padding: 20px 10px;
 }
 
+input:focus {
+    outline-color: #79baeb;
+}
+
 .menu, .info {
     box-sizing: border-box;
     float: left;
@@ -42,10 +46,11 @@ main {
     box-sizing: border-box;
     width: 80%;
     height: 80%;
-    border-color: #c4c4c4;
+    border: 1px solid lightgray;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     font-size: 25px;
+    padding: 10px;
 }
 
 .add-button {
@@ -61,8 +66,8 @@ main {
 
 .goods-input {
     height: 20px;
-    border-color: #a5d0f0;
     border-radius: 5px;
+    border: 1px solid #a5d0f0;
 }
 
 .amount-minus, .amount-plus {
@@ -124,17 +129,13 @@ main {
 }
 
 .bought .bought-button {
-    data-tooltip: "Not Buy";
     width: 120px;
 }
 
 .bought .bought-cancel {
     visibility: hidden;
     float: left;
-}
-
-.bought .bought-button::before {
-    content: "Not ";
+    width: 18px;
 }
 
 .info-div-header, .info-div-product {
@@ -233,18 +234,53 @@ main {
 }
 
 /*
-.tooltip {
-    position: absolute;
+.tooltip::before {
+    content: attr(data-tooltip);
+    border-radius: 5px;
     background-color: #ae01d9;
     color: white;
-    border-radius: 10px;
-    padding: 5px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100px;
+    width: 100px;
+
+    visibility: hidden;
 }
 
-button:hover .tooltip{
-    opacity: 1;
-    transform: translateY(10px);
+.button:hover .tooltip {
+    visibility: visible;
 }*/
+
+button {
+    position: relative;
+}
+
+button::before {
+    content: attr(data-tooltip);
+    opacity: 0;
+    background-color: #ae01d9;
+    color: white;
+    font-size: 1px;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: all 0.7s ease-in-out;
+    bottom: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover::before {
+    opacity: 1;
+    font-size: 16px;
+    height: 20px;
+    width: 100px;
+    bottom: calc(100% + 10px);
+}
