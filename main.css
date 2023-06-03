@@ -118,6 +118,7 @@ input:focus {
     box-sizing: border-box;
     height: 70%;
     font-size: 14px;
+    padding: 5px;
 }
 
 .bought .goods-name {
@@ -232,26 +233,6 @@ input:focus {
         display: none;
     }
 }
-
-/*
-.tooltip::before {
-    content: attr(data-tooltip);
-    border-radius: 5px;
-    background-color: #ae01d9;
-    color: white;
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    height: 100px;
-    width: 100px;
-
-    visibility: hidden;
-}
-
-.button:hover .tooltip {
-    visibility: visible;
-}*/
 
 button {
     position: relative;
